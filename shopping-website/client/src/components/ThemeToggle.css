@@ -1,0 +1,70 @@
+.theme-toggle-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1) rotate(15deg);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover svg {
+  transform: rotate(180deg);
+}
+
+/* Light mode specific */
+.theme-default .theme-toggle-btn {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+}
+
+.theme-default .theme-toggle-btn:hover {
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+}
+
+/* Dark mode specific */
+.theme-midnight .theme-toggle-btn {
+  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+  box-shadow: 0 4px 15px rgba(255, 216, 155, 0.4);
+}
+
+.theme-midnight .theme-toggle-btn:hover {
+  box-shadow: 0 6px 20px rgba(255, 216, 155, 0.6);
+}
+
+/* Animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.theme-toggle-btn {
+  animation: pulse 2s infinite;
+}
+
+.theme-toggle-btn:hover {
+  animation: none;
+}

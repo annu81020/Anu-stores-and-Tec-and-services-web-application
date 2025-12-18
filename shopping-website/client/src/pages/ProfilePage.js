@@ -1,0 +1,1 @@
+import React from 'react'; const ProfilePage = () => <div className="container" style={{padding:'50px 20px'}}><h1>User Profile</h1><div className="card"><h2>Profile Information</h2><p>Manage your account details and view your orders</p></div></div>; export default ProfilePage;

@@ -1,0 +1,1 @@
+import React from 'react'; const OrdersPage = () => <div className="container" style={{padding:'50px 20px'}}><h1>My Orders</h1><div className="card"><p>View all your orders</p></div></div>; export default OrdersPage;
